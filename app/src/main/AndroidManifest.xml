@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Izin Efek Audio & Background Service -->
+    <!-- Izin sistem audio & background service -->
     <uses-permission android.permission.MODIFY_AUDIO_SETTINGS />
     <uses-permission android.permission.FOREGROUND_SERVICE />
     <uses-permission android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK />
 
     <application
         android.allowBackup="true"
-        android.icon="@mipmap/ic_launcher"
+        android.icon="@android:drawable/ic_media_play"
         android.label="Universal Equalizer"
         android.supportsRtl="true"
         android.theme="@style/Theme.Material3.DayNight.NoActionBar">
@@ -22,12 +22,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Background Service untuk Equalizer -->
         <service
             android.name=".EQService"
             android.enabled="true"
             android.exported="false"
             android.foregroundServiceType="mediaPlayback" />
+
     </application>
 
 </manifest>
