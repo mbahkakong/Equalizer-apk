@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Izin sistem audio & background service -->
+    <!-- Izin Aplikasi -->
     <uses-permission android.permission.MODIFY_AUDIO_SETTINGS />
     <uses-permission android.permission.FOREGROUND_SERVICE />
     <uses-permission android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK />
@@ -9,10 +9,11 @@
     <application
         android.allowBackup="true"
         android.icon="@android:drawable/ic_media_play"
-        android.label="Universal Equalizer"
+        android.label="Equalizer"
         android.supportsRtl="true"
         android.theme="@style/Theme.Material3.DayNight.NoActionBar">
 
+        <!-- Main Activity -->
         <activity
             android.name=".MainActivity"
             android.exported="true">
@@ -22,6 +23,7 @@
             </intent-filter>
         </activity>
 
+        <!-- Foreground Service -->
         <service
             android.name=".EQService"
             android.enabled="true"
