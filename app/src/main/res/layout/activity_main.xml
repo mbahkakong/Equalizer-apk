@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:backgroundColor="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universal Equalizer"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnToggleEQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan Equalizer Background"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvFreq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bass / Low Band"
+        android:textColor="#BB86FC" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvFreq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treble / High Band"
+        android:textColor="#BB86FC" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
